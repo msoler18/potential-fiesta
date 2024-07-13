@@ -1,0 +1,84 @@
+@use "../abstracts/variables";
+
+%margin-title {
+  margin-bottom: 25px;
+}
+
+body {
+  color: variables.$color-text;
+  font-family: variables.$font-family-general;
+  font-size: variables.$font-size-general;
+}
+
+.margin-title {
+  @extend %margin-title;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.title {
+  display: block;
+  color: variables.$color-title;
+  font-family: variables.$font-family-title;
+  font-size: variables.$font-size-h1;
+  font-weight: 600;
+
+  @extend %margin-title;
+}
+
+h1,
+.h1 {
+  color: variables.$color-title;
+  font-family: variables.$font-family-title;
+  font-size: variables.$font-size-h1;
+  font-weight: 600;
+
+  @extend %margin-title;
+}
+
+h2,
+.h2 {
+  color: variables.$color-title;
+  font-family: variables.$font-family-title;
+  font-size: variables.$font-size-h2;
+  font-weight: 600;
+
+  @extend %margin-title;
+}
+
+h3,
+.h3 {
+  color: variables.$color-title;
+  font-family: variables.$font-family-title;
+  font-size: variables.$font-size-h3;
+  font-weight: 600;
+
+  @extend %margin-title;
+}
+
+h4,
+h5,
+h6 {
+  color: variables.$color-title;
+  font-family: variables.$font-family-title;
+  font-size: variables.$font-size-hn;
+  font-weight: 600;
+
+  @extend %margin-title;
+}
+
+a {
+  text-decoration: none;
+  color: variables.$color-text;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}

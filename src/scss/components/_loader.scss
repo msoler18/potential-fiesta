@@ -1,0 +1,19 @@
+@use '../abstracts/variables';
+
+#loading, .loading {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid variables.$color-black;
+  border-top-color: variables.$color-gray;
+  border-radius: 50%;
+  animation: spin 0.7s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

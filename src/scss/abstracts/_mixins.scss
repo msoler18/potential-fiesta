@@ -1,0 +1,51 @@
+@use "../abstracts/variables";
+
+@mixin btn-type($color, $bg, $border) {
+  border: 1px solid $border;
+  background-color: $bg;
+  color: $color;
+
+  & > div#loading {
+    border: 3px solid transparent;
+    border-top-color: $color;
+  }
+}
+
+@mixin media-custom($media) {
+  @media (min-width: $media) {
+    @content;
+  }
+}
+
+/*
+ * Create excerpt
+ * @param $line - Line from apply excerpt
+*/
+@mixin excerpt($line: 2) {
+  display: box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+}
+
+/*
+* Scroll styles
+* @param - $barColor - default: $primary - Bar color in the scroll
+* @param - $barWidthX - default: 5px - Bar width
+* @param - $barWidthY - default: 5px - Bar height
+*/
+@mixin scroll-custom($barWidthX: 8px, $barWidthY: 8px) {
+  &::-webkit-scrollbar {
+    width: $barWidthY;
+    height: $barWidthX;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: variables.$color-gray;
+    border-radius: 10px;
+  }
+}

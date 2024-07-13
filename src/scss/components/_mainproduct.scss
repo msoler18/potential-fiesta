@@ -1,0 +1,54 @@
+@use '../abstracts/variables';
+
+.main-product {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+
+  @media screen and (max-width: variables.$break-point-product) {
+    flex-direction: column;
+  }
+
+  & > .product-media {
+    width: 100%;
+
+    @media screen and (min-width: variables.$break-point-product) {
+      width: calc(65% - 50px);
+      margin-right: 50px;
+      position: relative;
+
+      &--thumbs {
+        position: sticky;
+        top: 100px;
+      }
+    }
+  }
+
+  &__detail {
+    width: 100%;
+    
+    @media screen and (min-width: variables.$break-point-product) {
+      width: 35%;
+      position: sticky;
+      top: 100px;
+    }
+
+    form {
+      button {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  & > .breadcrumbs {
+    width: 100%;
+  }
+
+  .breadcrumbs,
+  h1,
+  .price {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,56 @@
+{% comment %}
+  Render Upsell Section
+
+  Accepts:
+  - cart: {Object} cart object
+  - collection: {Object} collection object with upsell products
+  - title: {String} section heading
+
+  Usage:
+  {% render 'cart-upsell'
+    cart: cart,
+    collection: section.settings.upsell_collection,
+    title: section.settings.upsell_title
+  %}
+{% endcomment %}
+
+{% capture snippet_content %}
+  {% for upsell_product in collection.products %}
+    {% for line_item in cart.items %}
+      {% if upsell_product.id == line_item.product.id %}
+        {% assign in_cart = line_item.product.id %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
+    {% if upsell_product.id == in_cart %}
+      {% continue %}
+    {% elsif upsell_product.available %}
+      <swiper-slide>
+        {% render 'cart-upsell-product'
+          product: upsell_product
+        %}
+      </swiper-slide>
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+
+<div
+  class="cart-upsell side-cart__margins"
+>
+  <span class="cart-upsell__title">
+    {{ title }}
+  </span>
+
+  <div id="upsell-js">
+    <div id="cart-upsell-slider">
+      {% render 'slider-component',
+        section: section,
+        content: snippet_content,
+        navigation: true,
+        perpage: 1,
+        spaceBetween: 5
+      %}
+    </div>
+  </div>
+</div>

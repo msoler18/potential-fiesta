@@ -1,0 +1,92 @@
+{% comment %}
+  Renders product media
+
+  Accepts:
+  - product: {Object} Required - Product object element
+
+  Usage:
+  {% render 'product-media', product: product %}
+{% endcomment %}
+
+{% liquid
+  assign is_first = true
+  assign thumbs = true
+  assign pagination = true
+  
+  if product.media.size < 1
+    assign pagination = false
+  elsif product.media.size < 2
+    assign thumbs = false
+  endif
+%}
+
+<div class="product-media {% if thumbs %}product-media--thumbs{% endif %}">
+  <swiper-container
+    id="product-media-js"
+    init="false"
+    class="product-media-js product-media__principal"
+  >
+    {% for media in product.media %}
+      {% capture custom_attr %}id="product-image-{{ forloop.index }}" class="product-image-js"{% endcapture %}
+      {% render 'product-media-item'
+        media: media,
+        is_first: is_first,
+        width: 700,
+        height: 700,
+        sizes: "(min-width: 750px) calc(100vw - 22rem), 1100px"
+        custom_attr: custom_attr
+      %}
+      {% if media.media_type == 'image' %}
+        {% assign is_first = false %}
+      {% endif %}
+    {% endfor %}
+  </swiper-container>
+  
+  {% if thumbs %}
+    <div class="product-media__thumbs">
+      <swiper-container
+        init="false"
+        id="product-media-thumbs-js"
+      >
+        {% for media in product.media %}
+          {% render 'product-media-item'
+            media: media,
+            forloop: forloop,
+            width: 60,
+            height: 60,
+            sizes: "10 60"
+          %}
+        {% endfor %}
+      </swiper-container>
+      
+      <button
+        type="button"
+        class="swiper-button swiper-button-prev {{ id_slider }}"
+        aria-label="Arrow slider{{ id_slider }} prev"
+      >
+        {% render "button-arrow" %}
+      </button>
+      <button
+        type="button"
+        class="swiper-button swiper-button-next {{ id_slider }}"
+        aria-label="Arrow slider{{ id_slider }} next"
+      >
+        {% render "button-arrow", direction: "right" %}
+      </button>
+    </div>
+  {% endif %}
+
+  <div class="swiper-pagination product-media__pagination">
+  </div>
+</div>
+
+{% if pagination %}
+  {% render 'critical-swiper-config',
+    id_slider: 'product-media-js',
+    pagination: pagination,
+    navigation: thumbs,
+    perpage: 1,
+    space_between: 0
+    thumbs: thumbs,
+  %}
+{% endif %}

@@ -1,0 +1,40 @@
+.accordions {
+  display: grid;
+  grid-row-gap: 20px;
+  row-gap: 20px;
+}
+
+.accordion-item {
+  &__content {
+    overflow: hidden;
+    max-height: 0;
+    margin-top: 15px;
+    transition: max-height 0.15s ease-out;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+
+    svg {
+      width: 20px;
+      transition: transform .3s ease;
+    }
+
+    &[data-active="true"] {
+      & ~ div.accordion-item__content {
+        max-height: 500px;
+        transition: max-height 0.25s ease-in;
+      }
+
+      svg {
+        transform: rotateZ(180deg);
+      }
+    }
+  }
+}

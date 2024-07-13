@@ -1,0 +1,12 @@
+@import "base/reset";
+@import "theme/theme";
+@import "layout/header";
+@import "components/hero";
+
+.side-cart {
+  opacity: 0;
+}
+
+.window {
+  display: none;
+}

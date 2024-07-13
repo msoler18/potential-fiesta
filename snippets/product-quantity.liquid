@@ -1,0 +1,38 @@
+{% comment %}
+  Quantity selector
+  Renders product add quantity buttons
+
+  Accepts:
+  - product {Object} Required - Product object
+  - compare_at_price {Number} Optional - Compare price of a product variant
+  - price {Number} Optional - Final price shipping of a product variant
+  
+  Usage:
+  {% render 'product-quantity'
+    product: product,
+    price: price,
+    compare: compare_at_price
+  %}
+{% endcomment %}
+
+{%-liquid
+  unless price or compare_at_price
+    assign first_variant = product.selected_or_first_available_variant
+    assign price = first_variant.price
+    assign compare_at_price = first_variant.compare_at_price
+  endunless
+-%}
+
+<div
+  class="container-quantity container-quantity--left quantity-product-js"
+  data-price="{{ price | money_without_currency }}"
+  data-compare="{{ compare_at_price | money_without_currency }}"
+>
+  <span class="btn-change num-minus">-</span>
+  <input
+    name="quantity"
+    id="quantity"
+    value="1"
+    min="1"/>
+  <span class="btn-change num-add">+</span>
+</div>

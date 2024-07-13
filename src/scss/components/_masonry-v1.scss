@@ -1,0 +1,52 @@
+.masonry-v1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, minmax(150px, 300px));
+  grid-gap: 16px;
+  gap: 16px 16px;
+
+  @media screen and (width <= 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  &__image {
+    position: relative;
+
+    &-background {
+      width: 100%;
+      height: 100%;
+      object-position: center;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    &-label {
+      position: absolute;
+      box-sizing: border-box;
+      bottom: 0;
+      width: 100%;
+      background-color: var(--color-base-bg);
+      padding: 16px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      &--hover {
+        display: none;
+      }
+    }
+
+    &--main-left {
+      grid-row: 1 / span 2;
+    }
+
+    &--main-right {
+      grid-row: 1 / span 2;
+      grid-column: 2;
+    }
+
+    &:hover &-label--hover {
+      display: block;
+    }
+  }
+}

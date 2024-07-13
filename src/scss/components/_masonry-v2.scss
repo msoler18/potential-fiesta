@@ -1,0 +1,27 @@
+.masonry {
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .masonry-v2 {
+    columns: var(--masonry-columns) auto;
+    column-gap: .5rem;
+
+    @media screen and (width <= 768px) {
+      columns: 2 auto;
+    }
+  
+    &__image {
+      display: block;
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: .5rem;
+    }
+
+    &__item {
+      display: block;
+    }
+  }
+}

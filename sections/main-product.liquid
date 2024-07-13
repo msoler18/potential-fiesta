@@ -1,0 +1,70 @@
+{%-liquid
+  assign first_variant = product.selected_or_first_available_variant
+  assign price = first_variant.price
+  assign compare_at_price = first_variant.compare_at_price
+  assign available = first_variant.available
+-%}
+
+{% if settings.active_breadcrumbs_product %}
+  {% render 'breadcrumbs' %}
+{% endif %}
+
+{% render 'product-media'
+  product: product
+%}
+
+<div class="main-product__detail">
+  <h1>
+    {{ product.title }}
+  </h1>
+
+  {% render 'price', product: product %}
+
+  {% render 'description'
+    description: product.description
+  %}
+
+  {% render 'product-quantity'
+    price: price,
+    compare_at_price: compare_at_price
+  %}
+
+  <form
+    action="/cart/add"
+    class="add-cart-js add-product-cart"
+    data-product="{{ product.id }}"
+  >
+    {% render 'variants-form'
+      product: product,
+      option_radio: 'Color'
+      show_variant: 'Color Material Tamaño Services',
+      available: available
+    %}
+
+    {% render 'button-add-cart'
+      btn_type: 'btn-2',
+      class: 'btn-add-to-cart',
+      available: available
+    %}
+  </form>
+
+  <div class="icon-whit-text">
+    {% for block in section.blocks %}
+      {%- assign iconSVG = block.settings.image | image_url: width: 50 -%}
+      {%- if block.settings.heading != blank and block.settings.image != blank -%}
+        {% render 'text-with-icon'
+          icon: iconSVG,
+          description: block.settings.heading
+        %}
+      {%- endif -%}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product page",
+  "class": "main-product wrapper product-js",
+  "tag": "section"
+}
+{% endschema %}

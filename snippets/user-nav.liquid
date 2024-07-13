@@ -1,0 +1,8 @@
+<div class="header__user">
+  <span onclick="location.href='{{ routes.account_url }}'">
+    {% render 'icon-account' %}
+  </span>
+  <span {% unless request.page_type == 'cart' %}class="button-cart-js"{% endunless %}>
+    {% render 'icon-cart' %}
+  </span>
+</div>

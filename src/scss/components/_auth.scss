@@ -1,0 +1,33 @@
+@use '../abstracts/mixins';
+
+.auth {
+  text-align: center;
+
+  &.customer {
+    max-width: 600px;
+  }
+
+  &__recover {
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  & > * {
+    display: block;
+
+    &[data-active="false"] {
+      display: none;
+    }
+  }
+
+  &__buttons {
+    --direction: column;
+
+    margin-top: 20px;
+
+    & > *:not(:last-of-type) {
+      margin: 0 0 20px;
+    }
+  }
+}

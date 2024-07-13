@@ -1,0 +1,64 @@
+<nav class="nav" aria-label="Main Navigation">
+  <ul
+    id="nav-list-js"
+    class="nav__list"
+    role="navigation"
+  >
+    {% for link in linklists[linklist].links %}
+      {% if link.links != blank %}
+        <li
+          class="nav__child"
+          aria-haspopup="true"
+        >
+          <button
+            type="button"
+            class="nav__button"
+            aria-expanded="false"
+          >
+            {{ link.title }}
+            {% render 'icon-caret' %}
+          </button>
+          <ul class="nav__dropdown">
+            {% for childlink in link.links %}
+              <li class="nav__dropdown-first">
+                <a
+                  href="{{ childlink.url }}"
+                  title="{{ childlink.title }}"
+                >
+                  {{ childlink.title }}
+                </a>
+                {% if childlink.links != blank %}
+                  {% for grandchildlink in childlink.links %}
+                    <span class="nav__dropdown-second">
+                      <a
+                        href="{{ grandchildlink.url }}"
+                        title="{{ grandchildlink.title }}"
+                      >
+                        {{ grandchildlink.title }}
+                      </a>
+                    </span>
+                  {% endfor %}
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% else %}
+        <li class="nav__child">
+          <a
+            href="{{ link.url }}"
+            title="{{ link.title }}"
+          >
+            {{ link.title }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <span
+    class="nav__burguer"
+    id="burger-nav-js"
+  >
+    {% render 'icon-hamburger' %}
+  </span>
+</nav>

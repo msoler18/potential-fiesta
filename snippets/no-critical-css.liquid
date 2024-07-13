@@ -1,0 +1,35 @@
+{% assign ext = '.css' %}
+
+{% if development %}
+  {% assign ext = '.dev.css' %}
+{% endif %}
+
+<link
+  rel="stylesheet"
+  href="{{ 'critical' | append: ext | asset_url }}"
+  fetchpriority="high"
+/>
+
+{% render 'preload-css', ext: ext, asset: 'theme' %}
+{% render 'preload-css', ext: ext, asset: 'cart' %}
+
+{%- if request.page_type == 'product' -%}
+  <link
+    rel="stylesheet"
+    href="{{ 'product' | append: ext | asset_url }}"
+  />
+{%- endif -%}
+
+{%- if request.page_type == 'collection' -%}
+  <link
+    rel="stylesheet"
+    href="{{ 'collection' | append: ext | asset_url }}"
+  />
+{%- endif -%}
+
+{%- if request.page_type contains 'customers' -%}
+  <link
+    rel="stylesheet"
+    href="{{ 'customer' | append: ext | asset_url }}"
+  />
+{%- endif -%}

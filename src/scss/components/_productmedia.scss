@@ -1,0 +1,134 @@
+@use "../abstracts/variables";
+
+.product-media {
+  position: relative;
+
+  &__principal {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: variables.$break-point-product) {
+      flex-direction: row;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    & > * {
+      width: 100%;
+      padding-bottom: 100%;
+      position: relative;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+
+      & > img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__thumbs {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: 15px;
+    height: 300px;
+
+    @media screen and (max-width: variables.$break-point-product) {
+      display: none;
+    }
+
+    swiper-container {
+      height: 100%;
+    }
+  }
+
+  &__thumbs swiper-slide {
+    cursor: pointer;
+
+    & > img {
+      object-fit: cover;
+      border: 1px solid transparent;
+    }
+
+    &.swiper-slide-thumb-active {
+      & > img {
+        border-color: variables.$color-black;
+      }
+    }
+  }
+
+  &__thumbs > .swiper-button {
+    left: 50%;
+    top: auto;
+    right: auto;
+    margin: 0;
+    padding: 0;
+
+    & .btn-arrow {
+      width: 25px;
+      height: 25px;
+
+      & > svg {
+        width: 7px;
+        height: auto;
+      }
+    }
+
+    &-prev {
+      top: -35px;
+      transform: translateX(-50%) rotate(90deg);
+    }
+
+    &-next {
+      bottom: -35px;
+      transform: translateX(-50%) rotate(90deg);
+    }
+  }
+
+  &__pagination.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: static;
+    margin: 20px 0;
+
+    @media screen and (min-width: variables.$break-point-product) {
+      display: none;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+
+    &-active {
+      background-color: variables.$color-black;
+    }
+  }
+
+  &__bullet {
+    cursor: pointer;
+
+    @media screen and (max-width: variables.$break-point-product) {
+      width: 12px;
+      height: 12px;
+      margin: 6px;
+      border: 1px solid variables.$color-black;
+
+      &.visible {
+        background-color: variables.$color-black;
+      }
+    }
+  }
+}

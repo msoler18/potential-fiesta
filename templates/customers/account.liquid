@@ -1,0 +1,114 @@
+<div class="customer wrapper">
+  <h1 class="customer__title">
+    {{ 'customer.account.title' | t }}
+  </h1>
+
+  <a
+    href="{{ routes.account_logout_url }}"
+    title="{{ 'customer.log_out' | t }}"
+    class="customer__nav-link"
+  >
+    {{ 'customer.log_out' | t }}
+  </a>
+
+  <div class="customer__layout">
+    <div class="customer__2-3">
+      <h2>
+        {{ 'customer.orders.title' | t }}
+      </h2>
+
+      {% paginate customer.orders by 20 %}
+        {%- if customer.orders.size > 0 -%}
+          <div
+            class="grid customer__order-list--header customer__order-list"
+          >
+            <span>{{ "customer.orders.order_number" | t }}</span>
+            <span>{{ "customer.orders.date" | t }}</span>
+            <span>{{ "customer.orders.payment_status" | t }}</span>
+            <span>{{ "customer.orders.fulfillment_status" | t }}</span>
+            <span>{{ "customer.orders.total" | t }}</span>
+          </div>
+
+          {%- for order in customer.orders -%}
+
+            <div class="grid customer__order-list">
+              <a
+                class="customer__badge"
+                href="{{ order.customer_url }}"
+                title="{{ 'customer.orders.order_number_link'
+                  | t: number: order.name }}"
+                aria-label="{{ 'customer.orders.order_number_link'
+                  | t: number: order.name }}"
+              >
+                {{ order.name }}
+              </a>
+
+              <div>
+                <span class="ref-hidden">
+                  {{ "customer.orders.date" | t }}:
+                </span>
+                <span>
+                  {{ order.created_at | time_tag: format: 'date' }}
+                </span>
+              </div>
+
+              <div>
+                <span class="ref-hidden">
+                  {{ "customer.orders.payment_status" | t }}:
+                </span>
+                <span>
+                  {{ order.financial_status_label }}
+                </span>
+              </div>
+
+              <div>
+                <span class="ref-hidden">
+                  {{ "customer.orders.fulfillment_status" | t }}
+                </span>
+                <span>
+                  {{ order.fulfillment_status_label }}
+                </span>
+              </div>
+
+              <div>
+                <span class="ref-hidden">
+                  {{ "customer.orders.total" | t }}
+                </span>
+                <span>
+                  {{ order.total_price | money }}
+                </span>
+              </div>
+            </div>
+
+          {% endfor %}
+        {%- else -%}
+          <p>{{ 'customer.orders.none' | t }}</p>
+        {%- endif -%}
+
+        {%- if paginate.pages > 1 -%}
+          {% render 'pagination',
+            paginate: paginate
+          %}
+        {%- endif -%}
+      {% endpaginate %}
+    </div>
+
+    <div class="customer__1-3">
+      <h2>
+        {{ 'customer.account.details' | t }}
+      </h2>
+
+      <div class="customer__section-space">
+        {{ customer.default_address | format_address }}
+      </div>
+
+      <a
+        title="{{ 'customer.account.view_addresses' | t }}"
+        href="{{ routes.account_addresses_url }}"
+      >
+        <!-- eslint-disable max-len -->
+        {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
+      </a>
+    </div>
+  </div>
+</div>

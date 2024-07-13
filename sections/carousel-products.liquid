@@ -1,0 +1,73 @@
+{%- if section.settings.heading != blank -%}
+  <h2>{{ section.settings.heading }}</h2>
+{%- endif -%}
+
+{% capture snippet_content %}
+  {% for block in section.blocks %}
+    {% assign product = block.settings.product %}
+    <swiper-slide>
+      {% render 'product-card'
+        product: product
+      %}
+    </swiper-slide>
+  {% endfor %}
+{% endcapture %}
+
+{% render 'slider-component',
+  section: section,
+  content: snippet_content,
+  navigation: true,
+  perpage: 4
+%}
+
+{% render 'carousel-schema-org'
+  array_elements: section.blocks
+%}
+
+{% schema %}
+{
+  "name": "Carousel products",
+  "class": "carousel-products wrapper",
+  "tag": "section",
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Heading carousel"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Carousel products",
+      "blocks": [
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

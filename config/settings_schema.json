@@ -1,0 +1,295 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Gradibase",
+    "theme_version": "0.0.1",
+    "theme_author": "Gradiweb",
+    "theme_documentation_url": "https://github.com/gradiweb/dawn",
+    "theme_support_url": "https://github.com/gradiweb/dawn"
+  },
+  {
+    "name": "Google tag manager",
+    "settings": [
+      {
+        "type": "text",
+        "id": "id_google_tag_manager",
+        "default": "GTM-MFS5CS5",
+        "label": "ID google tag manager"
+      }
+    ]
+  },
+  {
+    "name": "Active breadcrumbs",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "active_breadcrumbs_product",
+        "default": true,
+        "label": "Active breadcrumbs products - collections"
+      },
+      {
+        "type": "checkbox",
+        "id": "active_breadcrumbs_article",
+        "default": true,
+        "label": "Active breadcrumbs article - blogs"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.colors.name",
+    "settings": [
+      {
+        "type": "color",
+        "id": "colors_brand",
+        "default": "#fafafa",
+        "label": "Color brand",
+        "info": "To use in a predominant color on the page"
+      },
+      {
+        "type": "header",
+        "content": "Background"
+      },
+      {
+        "type": "color",
+        "id": "colors_bg_1",
+        "label": "Principal Background",
+        "default": "#f5f5f5"
+      },
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "color",
+        "id": "colors_txt",
+        "default": "#000000",
+        "label": "Text body"
+      },
+      {
+        "type": "color",
+        "id": "colors_title",
+        "default": "#000000",
+        "label": "Titles"
+      },
+      {
+        "type": "color",
+        "id": "colors_link",
+        "default": "#8c8c8c",
+        "label": "Link"
+      },
+      {
+        "type": "header",
+        "content": "Buttons"
+      },
+      {
+        "type": "paragraph",
+        "content": "Customize button 1"
+      },
+      {
+        "type": "color",
+        "id": "colors_btn_color_1",
+        "default": "#000000",
+        "label": "Color 1"
+      },
+      {
+        "type": "color",
+        "id": "colors_btn_bg_1",
+        "default": "#FFFFFF",
+        "label": "Background 1"
+      },
+      {
+        "type": "color",
+        "id": "colors_btn_border_1",
+        "default": "#000000",
+        "label": "Border 1"
+      },
+      {
+        "type": "paragraph",
+        "content": "Customize button 2"
+      },
+      {
+        "type": "color",
+        "id": "colors_btn_color_2",
+        "default": "#FFFFFF",
+        "label": "Color 2"
+      },
+      {
+        "type": "color",
+        "id": "colors_btn_bg_2",
+        "default": "#000000",
+        "label": "Background 2"
+      },
+      {
+        "type": "color",
+        "id": "colors_btn_border_2",
+        "default": "#000000",
+        "label": "Border 2"
+      },
+      {
+        "type": "paragraph",
+        "content": "Customize button 3"
+      },
+      {
+        "type": "color",
+        "id": "colors_btn_color_3",
+        "default": "#FFFFFF",
+        "label": "Color 3"
+      },
+      {
+        "type": "color",
+        "id": "colors_btn_bg_3",
+        "default": "#cecccc",
+        "label": "Background 3"
+      },
+      {
+        "type": "color",
+        "id": "colors_btn_border_3",
+        "default": "#000000",
+        "label": "Border 3"
+      },
+      {
+        "type": "paragraph",
+        "content": "Hover effect"
+      },
+      {
+        "type": "color",
+        "id": "colors_btn_color_hover",
+        "default": "#8c8c8c",
+        "label": "Color hover"
+      },
+      {
+        "type": "color",
+        "id": "colors_btn_bg_hover",
+        "default": "#fafafa",
+        "label": "Background hover"
+      },
+      {
+        "type": "color",
+        "id": "colors_btn_border_hover",
+        "default": "#737373",
+        "label": "Border hover"
+      },
+      {
+        "type": "header",
+        "content": "Variants colors"
+      },
+      {
+        "id": "variant_color_textarea",
+        "type": "textarea",
+        "label": "Colours of the variants",
+        "info": "Enter the colour information as in the example. Ex: Black:#000",
+        "default": "Black:#000;<br />Green:#14D66F;<br />Gray:#C4C4C4;",
+        "placeholder": "Colour:#hex<Linefeed>\n\nExample:\nWhite:#fff\nBlack:#000\n..."
+      },
+      {
+        "id": "variant_images",
+        "type": "textarea",
+        "label": "Variant Textures",
+        "info": "Enter the texture information as in the example.\nEx: texture1:Juste Le Marine Rayé",
+        "default": "texture_name1:texture1\ntexture_name2:texture2\ntexture_name3:texture3\n",
+        "placeholder": "Texture1..n:Alt names of images in product files<Linefeed>\n\nExample:\ntexture_name1:texture1\ntexture_name2:texture2\n..."
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_texture_option",
+        "label": "Enable textures option"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.social-media.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.social-media.settings.header.content"
+      },
+      {
+        "type": "text",
+        "id": "order_media",
+        "label": "Order icons",
+        "info": "Ex: facebook instagram linkedin",
+        "default": "facebook instagram linkedin"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter_link",
+        "label": "t:settings_schema.social-media.settings.social_twitter_link.label",
+        "default": "t:settings_schema.social-media.settings.social_twitter_link.info",
+        "info": "t:settings_schema.social-media.settings.social_twitter_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook_link",
+        "label": "t:settings_schema.social-media.settings.social_facebook_link.label",
+        "default": "t:settings_schema.social-media.settings.social_facebook_link.info",
+        "info": "t:settings_schema.social-media.settings.social_facebook_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_pinterest_link",
+        "label": "t:settings_schema.social-media.settings.social_pinterest_link.label",
+        "default": "t:settings_schema.social-media.settings.social_pinterest_link.info",
+        "info": "t:settings_schema.social-media.settings.social_pinterest_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram_link",
+        "label": "t:settings_schema.social-media.settings.social_instagram_link.label",
+        "info": "t:settings_schema.social-media.settings.social_instagram_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_tiktok_link",
+        "label": "t:settings_schema.social-media.settings.social_tiktok_link.label",
+        "info": "t:settings_schema.social-media.settings.social_tiktok_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_tumblr_link",
+        "label": "t:settings_schema.social-media.settings.social_tumblr_link.label",
+        "info": "t:settings_schema.social-media.settings.social_tumblr_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_snapchat_link",
+        "label": "t:settings_schema.social-media.settings.social_snapchat_link.label",
+        "info": "t:settings_schema.social-media.settings.social_snapchat_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube_link",
+        "label": "t:settings_schema.social-media.settings.social_youtube_link.label",
+        "info": "t:settings_schema.social-media.settings.social_youtube_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_vimeo_link",
+        "label": "t:settings_schema.social-media.settings.social_vimeo_link.label",
+        "info": "t:settings_schema.social-media.settings.social_vimeo_link.info"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.favicon.name",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "t:settings_schema.favicon.settings.favicon.label",
+        "info": "t:settings_schema.favicon.settings.favicon.info"
+      }
+    ]
+  },
+  {
+    "name": "Variants color",
+    "settings": [
+      {
+        "type": "text",
+        "id": "variants_color",
+        "label": "Variants color",
+        "info": "Allow render the color variable",
+        "default": "Color"
+      }
+    ]
+  }
+]

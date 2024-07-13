@@ -1,0 +1,95 @@
+{% capture snippet_content %}
+  {% for block in section.blocks %}
+    <swiper-slide>
+      {% render 'hero-slide',
+        index: forloop.index
+        title: block.settings.heading,
+        description: block.settings.description,
+        ctatext: block.settings.cta_text,
+        ctalink: block.settings.cta_link,
+        imagedesktop: block.settings.image_desktop,
+        imagemobile: block.settings.image_mobile
+      %}
+    </swiper-slide>
+  {% endfor %}
+{% endcapture %}
+
+{% render 'slider-component',
+  section: section,
+  content: snippet_content,
+  pagination: true,
+  perpage: 1,
+  auto: true,
+  speed: 3000
+%}
+
+{% schema %}
+{
+  "name": "Hero Slider",
+  "tag": "section",
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "content",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Heading Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "type": "text",
+          "id": "cta_text",
+          "label": "Button Text",
+          "default": "Button text"
+        },
+        {
+          "type": "text",
+          "id": "cta_link",
+          "label": "Button Link",
+          "default": "#"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_desktop",
+          "label": "Desktop Image",
+          "info": "Ratio 18:6"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Mobile Image",
+          "info": "Ratio 1:1"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Slider",
+      "blocks": [
+        {
+          "type": "content"
+        },
+        {
+          "type": "content"
+        },
+        {
+          "type": "content"
+        },
+        {
+          "type": "content"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

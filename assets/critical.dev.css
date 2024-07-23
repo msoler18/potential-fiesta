@@ -230,7 +230,7 @@ h6, h3,
 
 body {
   color: var(--color-base-text);
-  font-family: "system", sans-serif;
+  font-family: "Inter Regular";
   font-size: 16px;
 }
 
@@ -241,7 +241,7 @@ body {
 .title {
   display: block;
   color: var(--color-base-title);
-  font-family: "system", sans-serif;
+  font-family: "Inter Extra Bold";
   font-size: 30px;
   font-weight: 600;
 }
@@ -249,7 +249,7 @@ body {
 h1,
 .h1 {
   color: var(--color-base-title);
-  font-family: "system", sans-serif;
+  font-family: "Inter Extra Bold";
   font-size: 30px;
   font-weight: 600;
 }
@@ -257,7 +257,7 @@ h1,
 h2,
 .h2 {
   color: var(--color-base-title);
-  font-family: "system", sans-serif;
+  font-family: "Inter Extra Bold";
   font-size: 25px;
   font-weight: 600;
 }
@@ -265,7 +265,7 @@ h2,
 h3,
 .h3 {
   color: var(--color-base-title);
-  font-family: "system", sans-serif;
+  font-family: "Inter Extra Bold";
   font-size: 22px;
   font-weight: 600;
 }
@@ -274,7 +274,7 @@ h4,
 h5,
 h6 {
   color: var(--color-base-title);
-  font-family: "system", sans-serif;
+  font-family: "Inter Extra Bold";
   font-size: 18px;
   font-weight: 600;
 }

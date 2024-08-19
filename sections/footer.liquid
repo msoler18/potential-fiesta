@@ -1,7 +1,52 @@
 <div class="footer-blocks">
+  <div class="footer-logo">
+    logo image
+  </div>
   <div class="grid wrapper">
     {% for block in section.blocks %}
       {% case block.type %}
+
+        {% when "info_about" %}  
+
+          <div class="footer-about">
+            <h3>
+              {{ block.settings.about_us_title }}
+            </h3>
+            <p>
+              {{ block.settings.about_us_description }}
+            </p>
+          </div>
+
+        {% when "contact_info" %}     
+          
+          <div class="footer-contact">
+            <h3>
+              {{ block.settings.info_title }}
+            </h3>
+            <span class="info-wrapper">
+              icon
+              <h4>
+                {{ block.settings.info_quotes_subtitle }}
+              </h4>
+              <a href="mailto:{{ block.settings.info_quotes_email }}">
+                {{ block.settings.info_quotes_email }}
+              </a>
+            </span>
+            <span class="info-wrapper">
+              icon
+              <h4>
+                {{ block.settings.info_phone_subtitle }}
+              </h4>
+              <span class="info-wrapper-dual">
+                <a href="tel:{{ block.settings.info_phone_primary }}">
+                  {{ block.settings.info_phone_primary }}
+                </a>
+                <a href="tel:{{ block.settings.info_phone_secondary }}">
+                  {{ block.settings.info_phone_secondary }}
+                </a>
+              </span>
+            </span>
+          </div>
 
         {% when "link_list" %}
           <nav
@@ -10,14 +55,14 @@
             aria-label="Footer"
             aria-labelledby="footer-title"
           >
-            {% if block.settings.heading != blank %}
+            {% if block.settings.categories_menu_title != blank %}
               <h2 class="footer-blocks__title">
-                {{ block.settings.heading }}
+                {{ block.settings.categories_menu_title }}
               </h2>
             {% endif %}
-            {% if block.settings.menu != blank %}
+            {% if block.settings.menu_categories != blank %}
               <ul class="footer-blocks__list">
-                {% for link in linklists[block.settings.menu].links %}
+                {% for link in linklists[block.settings.menu_categories].links %}
                   <li>
                     <a href="{{ link.url }}" title="{{ link.title }}">
                       {{ link.title }}
@@ -27,86 +72,6 @@
               </ul>
             {% endif %}
           </nav>
-
-        {% when "newslatter" %}
-          <div class="footer-blocks_newsletter">
-            {% if block.settings.newsletter_heading != blank %}
-              <span class="footer-blocks__title">
-                {{ block.settings.newsletter_heading }}
-              </span>
-            {% endif %}
-            {% if block.settings.newsletter_sub != blank %}
-              <span class="footer-blocks__subtitle">
-                {{ block.settings.newsletter_sub }}
-              </span>
-            {% endif %}
-            {%- form 'customer', id: 'contact-footer', class: "newslatter-form" -%}
-              <input
-                type="hidden"
-                name="contact[tags]"
-                value="newsletter"
-              />
-
-              <div class="form__textfield footer-blocks__newslatter">
-                <input
-                  id="NewsletterForm--{{ section.id }}"
-                  type="email"
-                  name="contact[email]"
-                  value="{{ form.email }}"
-                  aria-required="true"
-                  autocorrect="off"
-                  autocapitalize="off"
-                  autocomplete="email"
-                  {% if form.errors %}
-                    autofocus
-                    aria-invalid="true"
-                    aria-describedby="contact-footer-error"
-                  {% elsif form.posted_successfully? %}
-                    aria-describedby="contact-footer-success"
-                  {% endif %}
-                  placeholder="{{ 'newsletter.label' | t }}"
-                  required
-                />
-                <label for="NewsletterForm--{{ section.id }}">
-                  {{ 'newsletter.label' | t }}
-                </label>
-                <button
-                  type="submit"
-                  name="commit"
-                  id="Subscribe"
-                  aria-label="{{ 'newsletter.button_label' | t }}"
-                >
-                  {% render 'icon-arrow' %}
-                </button>
-              </div>
-
-              {%- if form.errors -%}
-                <small role="alert" aria-live="polite" id="contact-footer-error">
-                  {{ form.errors.translated_fields['email'] | capitalize }}
-                  {{ form.errors.messages['email'] }}
-                </small>
-              {%- else -%}
-                <h3
-                  role="alert" aria-live="polite"
-                  id="contact-footer-success-exist"
-                  class="error-js"
-                  tabindex="-1"
-                >
-                  ✓ {{ 'newsletter.registered' | t }}
-                </h3>
-              {%- endif -%}
-
-              {%- if form.posted_successfully? -%}
-                <h3
-                  role="alert" aria-live="polite"
-                  id="contact-footer-success"
-                  tabindex="-1"
-                >
-                  ✓ {{ 'newsletter.success' | t }}
-                </h3>
-              {%- endif -%}
-            {%- endform -%}
-          </div>
 
         {% when "info" %}
           <div class="footer-blocks__info">
@@ -149,14 +114,9 @@
   "class": "footer",
   "blocks": [
     {
-      "type": "link_list",
-      "name": "t:sections.footer.blocks.link_list.name",
+      "type": "info_about",
+      "name": "Info About Us",
       "settings": [
-        {
-          "type": "image_picker",
-          "id": "logo",
-          "label": "Logo footer"
-        },
         {
           "type": "text",
           "id": "about_us_title",
@@ -168,18 +128,13 @@
           "id": "about_us_description",
           "default": "About us description",
           "label": "About us description"
-        },
-        {
-          "type": "text",
-          "id": "heading_categories",
-          "default": "Categories text",
-          "label": "Categories text"
-        },
-        {
-          "type": "link_list",
-          "id": "menu_categories",
-          "label": "Categories links"
-        },
+        }
+      ]
+    },
+    {
+      "type": "contact_info",
+      "name": "Contact info",
+      "settings": [
         {
           "type": "text",
           "id": "info_title",
@@ -191,6 +146,12 @@
           "id": "info_quotes_subtitle",
           "default": "Correo cotizaciones",
           "label": "Quotes title"
+        },
+        {
+          "type": "text",
+          "id": "info_quotes_email",
+          "default": "ventas@en-stock.com",
+          "label": "Email"
         },
         {
           "type": "text",
@@ -213,7 +174,24 @@
       ]
     },
     {
-      "type": "info",
+      "type": "link_list",
+      "name": "Menú categories",
+      "settings": [
+        {
+          "type": "text",
+          "id": "categories_menu_title",
+          "default": "Información",
+          "label": "Info title"
+        },
+        {
+          "type": "link_list",
+          "id": "menu_categories",
+          "label": "Categories links"
+        }
+      ]
+    },
+    {
+      "type": "copyright",
       "name": "Copyright",
       "settings": [
         {
@@ -233,6 +211,11 @@
   ],
   "settings": [
     {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo footer"
+    },
+    {
       "type": "text",
       "id": "sub_footer",
       "default": "© 2024, promocioanales en-stock",
@@ -248,7 +231,10 @@
   "default": {
     "blocks": [
       {
-        "type": "link_list"
+        "type": "info_about"
+      },
+      {
+        "type": "contact_info"
       },
       {
         "type": "link_list"

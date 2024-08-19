@@ -46,7 +46,7 @@
 
     {{ content_for_header }}
 
-    {% render 'compilation-tag', development: false, head: true %}
+    {% render 'compilation-tag', development: true, head: true %}
 
     <script
       id="script-swiper-js"
@@ -67,7 +67,7 @@
     <main id="MainContent" role="main" tabindex="-1">
       {% section 'header' %}
       {% section 'mega-menu' %}
-      {% section 'header' %}
+      {% section 'announcement-bar' %}
       {{ content_for_layout }}
       {% section 'footer' %}
     </main>
@@ -106,7 +106,7 @@
       }
     </script>
 
-    {% render 'compilation-tag', development: false %}
+    {% render 'compilation-tag', development: true %}
 
     <script
       src="{{ 'lazysizes.min.js' | asset_url }}"

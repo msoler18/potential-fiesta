@@ -26,10 +26,8 @@
         "type": "header",
         "settings": {
           "menu": "main-menu",
-          "email_icon": "shopify:\/\/shop_images\/mail-icon.svg",
           "email_heading": "Correo cotizaciones",
           "email_quotes": "contacto@promocionalesenstock.com.co",
-          "wp_icon": "shopify:\/\/shop_images\/wp.svg",
           "wp_heading": "Teléfonos contacto",
           "wp_quotes_first": 3144895712,
           "wp_quotes_second": 3187722655

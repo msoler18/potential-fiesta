@@ -53,7 +53,9 @@
 
     <span class="subcontainer">
       {{ section.settings.wp_icon | image_url: width: 24 | image_tag }}
-      {{ section.settings.wp_heading}}
+      <span class="subcontainer_title">
+        {{ section.settings.wp_heading}}
+      </span>
     </span>
 
     <span class="wp-sub">

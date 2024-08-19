@@ -1,18 +1,51 @@
 <div class="footer-blocks">
+  <div class="footer-logo">
+    logo image
+  </div>
   <div class="grid wrapper">
     {% for block in section.blocks %}
       {% case block.type %}
 
-        {% when "header" %}
-
-          <div class="footer__logo">
-            logo image
-          </div>
-
         {% when "info_about" %}  
 
-          <div class="">
+          <div class="footer-about">
+            <h3>
+              {{ block.settings.about_us_title }}
+            </h3>
+            <p>
+              {{ block.settings.description }}
+            </p>
+          </div>
 
+        {% when "contact_info" %}     
+          
+          <div class="footer-contact">
+            <h3>
+              {{ block.settings.info_title }}
+            </h3>
+            <span class="info-wrapper">
+              icon
+              <h4>
+                {{ block.settings.info_quotes_subtitle }}
+              </h4>
+              <a href="mailto:{{ block.settings.info_quotes_email }}">
+                {{ block.settings.info_quotes_email }}
+              </a>
+            </span>
+            <span class="info-wrapper">
+              icon
+              <h4>
+                {{ block.settings.info_phone_subtitle }}
+              </h4>
+              <span class="info-wrapper-dual">
+                <a href="tel:{{ block.settings.info_phone_primary }}">
+                  {{ block.settings.info_phone_primary }}
+                </a>
+                <a href="tel:{{ block.settings.info_phone_secondary }}">
+                  {{ block.settings.info_phone_secondary }}
+                </a>
+              </span>
+            </span>
           </div>
 
         {% when "link_list" %}
@@ -22,14 +55,14 @@
             aria-label="Footer"
             aria-labelledby="footer-title"
           >
-            {% if block.settings.heading != blank %}
+            {% if block.settings.categories_menu_title != blank %}
               <h2 class="footer-blocks__title">
-                {{ block.settings.heading }}
+                {{ block.settings.categories_menu_title }}
               </h2>
             {% endif %}
-            {% if block.settings.menu != blank %}
+            {% if block.settings.menu_categories != blank %}
               <ul class="footer-blocks__list">
-                {% for link in linklists[block.settings.menu].links %}
+                {% for link in linklists[block.settings.menu_categories].links %}
                   <li>
                     <a href="{{ link.url }}" title="{{ link.title }}">
                       {{ link.title }}
@@ -81,17 +114,6 @@
   "class": "footer",
   "blocks": [
     {
-      "type": "header",
-      "name": "Header footer",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "logo",
-          "label": "Logo footer"
-        }
-      ]
-    },
-    {
       "type": "info_about",
       "name": "Info About Us",
       "settings": [
@@ -124,6 +146,12 @@
           "id": "info_quotes_subtitle",
           "default": "Correo cotizaciones",
           "label": "Quotes title"
+        },
+        {
+          "type": "text",
+          "id": "info_quotes_email",
+          "default": "ventas@en-stock.com",
+          "label": "Email"
         },
         {
           "type": "text",
@@ -202,9 +230,6 @@
   ],
   "default": {
     "blocks": [
-      {
-        "type": "header"
-      },
       {
         "type": "info_about"
       },

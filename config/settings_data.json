@@ -9,6 +9,11 @@
 */
 {
   "current": {
+    "colors_brand": "#ed1d26",
+    "colors_link": "#ed1d26",
+    "colors_btn_color_1": "#FFFFFF",
+    "colors_btn_bg_1": "#ed1d26",
+    "colors_btn_border_1": "#ed1d26",
     "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#121212",
     "colors_accent_2": "#334FB4",
@@ -20,7 +25,12 @@
       "header": {
         "type": "header",
         "settings": {
-          "menu": "main-menu"
+          "menu": "main-menu",
+          "email_heading": "Correo cotizaciones",
+          "email_quotes": "contacto@promocionalesenstock.com.co",
+          "wp_heading": "Teléfonos contacto",
+          "wp_quotes_first": 3144895712,
+          "wp_quotes_second": 3187722655
         }
       },
       "footer": {
@@ -29,11 +39,29 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
+              "about_us_title": "About us title",
+              "about_us_description": "About us description",
+              "heading_categories": "Categories text",
+              "menu_categories": "",
+              "info_title": "Información",
+              "info_quotes_subtitle": "Correo cotizaciones",
+              "info_phone_subtitle": "Teléfonos contacto",
+              "info_phone_primary": "3144895712",
+              "info_phone_secondary": "3187722655"
             }
           },
           "footer-1": {
             "type": "link_list",
             "settings": {
+              "about_us_title": "About us title",
+              "about_us_description": "About us description",
+              "heading_categories": "Categories text",
+              "menu_categories": "",
+              "info_title": "Información",
+              "info_quotes_subtitle": "Correo cotizaciones",
+              "info_phone_subtitle": "Teléfonos contacto",
+              "info_phone_primary": "3144895712",
+              "info_phone_secondary": "3187722655"
             }
           }
         },

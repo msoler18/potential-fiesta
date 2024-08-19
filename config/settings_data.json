@@ -53,11 +53,19 @@
               "info_phone_primary": "3144895712",
               "info_phone_secondary": "3187722655"
             }
+          },
+          "link_list_xQmjye": {
+            "type": "link_list",
+            "settings": {
+              "categories_menu_title": "Categorías",
+              "menu_categories": "footer"
+            }
           }
         },
         "block_order": [
           "info_about_9VNN6f",
-          "contact_info_YFnLha"
+          "contact_info_YFnLha",
+          "link_list_xQmjye"
         ],
         "settings": {
           "sub_footer": "© 2022, theme-base Powered by Gradiweb",

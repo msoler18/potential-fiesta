@@ -8,7 +8,8 @@
         ctatext: block.settings.cta_text,
         ctalink: block.settings.cta_link,
         imagedesktop: block.settings.image_desktop,
-        imagemobile: block.settings.image_mobile
+        imagemobile: block.settings.image_mobile,
+        contentalign: block.settings.content_alignment
       %}
     </swiper-slide>
   {% endfor %}
@@ -33,6 +34,26 @@
       "type": "content",
       "name": "Slide",
       "settings": [
+        {
+          "type": "select",
+          "id": "content_alignment",
+          "label": "Content alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        },
         {
           "type": "text",
           "id": "heading",

@@ -47,11 +47,30 @@
               "about_us_title": "¿Quiénes somos?",
               "about_us_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             }
+          },
+          "contact_info_bFhFty": {
+            "type": "contact_info",
+            "settings": {
+              "info_title": "Información",
+              "info_quotes_subtitle": "Correo cotizaciones",
+              "info_phone_subtitle": "Teléfonos contacto",
+              "info_phone_primary": "3144895712",
+              "info_phone_secondary": "3187722655"
+            }
+          },
+          "link_list_4nnwNW": {
+            "type": "link_list",
+            "settings": {
+              "categories_menu_title": "Información",
+              "menu_categories": "footer"
+            }
           }
         },
         "block_order": [
           "header_wXYEaT",
-          "info_about_xpqda7"
+          "info_about_xpqda7",
+          "contact_info_bFhFty",
+          "link_list_4nnwNW"
         ],
         "settings": {
           "sub_footer": "© 2022, theme-base Powered by Gradiweb",

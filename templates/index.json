@@ -262,7 +262,7 @@
     "4ffec980-e8ab-422b-94db-60e50771a7cd": {
       "type": "call-to-action",
       "settings": {
-        "width_mode": "50",
+        "width_mode": "100",
         "title": "Call to action",
         "description": "",
         "text_button_one": "Collections",

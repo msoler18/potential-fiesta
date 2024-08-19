@@ -3,36 +3,77 @@
   assign alt_logo = 'Logo ' | append: shop.name
 %}
 
-{% capture content_logo %}
-  {% if section.settings.logo != blank %}
-    <img
-      src="{{ logo }}"
-      alt="{{ alt_logo }}"
-      width="150"
-      height="35"
-    />
-  {% else %}
-    {{ shop.name }}
-  {% endif %}
-{% endcapture %}
+<div class="header__main flex">
 
-<div class="header__logo">
-  {% render 'link'
-    url: routes.root_url,
-    content: content_logo,
-    title: alt_logo
+  {% capture content_logo %}
+    {% if section.settings.logo != blank %}
+      <img
+        src="{{ logo }}"
+        alt="{{ alt_logo }}"
+        width="150"
+        height="35"
+      />
+    {% else %}
+      {{ shop.name }}
+    {% endif %}
+  {% endcapture %}
+
+  <div class="header__main--logo">
+    {% render 'link'
+      url: routes.root_url,
+      content: content_logo,
+      title: alt_logo
+    %}
+  </div>
+
+  <div class="header__main---search">
+
+    <input type="search" name="search" id="search">
+
+  </div>
+
+  <div class="header__main--quotes">
+
+    <span class="subcontainer">
+      icon
+      {{ section.settings.email_heading }}
+    </span>
+
+    <span>
+      <a href="mailto:{{ section.settings.email_quotes }}">
+        {{ section.settings.email_quotes }}
+      </a>
+    </span>
+
+  </div>
+
+  <div class="header__main--wp">
+
+    <span class="subcontainer">
+      icon
+      {{ section.settings.wp_heading}}
+    </span>
+
+    <span class="wp-sub">
+      <a href="tel:{{ section.settings.wp_quotes_first }}">
+        {{ section.settings.wp_quotes_first }}
+      </a>
+      <a href="tel:{{ section.settings.wp_quotes_second }}">
+        {{ section.settings.wp_quotes_second }}
+      </a>
+    </span>
+
+  </div>
+
+
+  {% render 'user-nav' %}
+
+  {% render 'site-nav-mobile',
+    linklistsAll: linklists[section.settings.menu]
   %}
+
 </div>
 
-{% render 'site-nav'
-  linklist: section.settings.menu
-%}
-
-{% render 'user-nav' %}
-
-{% render 'site-nav-mobile',
-  linklistsAll: linklists[section.settings.menu]
-%}
 
 {% schema %}
 {

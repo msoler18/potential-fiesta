@@ -205,15 +205,23 @@
         "columns": 5
       }
     },
+    "section_title_g6cVm8": {
+      "type": "section-title",
+      "settings": {
+        "title": "Nuestras técnicas de",
+        "title_highligthed": "marcación"
+      }
+    },
     "9ff7a25e-e105-49ba-b268-be58e10ab5ff": {
       "type": "dual-section",
       "settings": {
         "section_margin": false,
         "dual_section_title": "Dual section",
-        "dual_section_title_size": "h2",
+        "dual_section_title_size": "h3",
         "dual_section_titleCTA": "Go to checkout",
         "dual_section_linkCTA": "",
         "position_image": "left",
+        "image_brackground": "shopify:\/\/shop_images\/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg",
         "dual_section_subtitle": "<p>lorem ipsum<\/p>",
         "dual_section_description": "<p><strong>Lorem ipsum dolor sit amet <\/strong><em>consectetur adipiscing<\/em> <a href=\"\/collections\/all\" title=\"All\">elit<\/a><\/p>"
       }
@@ -221,12 +229,27 @@
     "3b3d4f4e-1e12-4439-afc1-e247b2e4905e": {
       "type": "dual-section",
       "settings": {
-        "section_margin": true,
+        "section_margin": false,
         "dual_section_title": "Dual section",
-        "dual_section_title_size": "h2",
+        "dual_section_title_size": "h3",
         "dual_section_titleCTA": "Go to checkout",
         "dual_section_linkCTA": "",
         "position_image": "right",
+        "image_brackground": "shopify:\/\/shop_images\/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg",
+        "dual_section_subtitle": "<p>lorem ipsum<\/p>",
+        "dual_section_description": "<p><strong>Lorem ipsum dolor sit amet <\/strong><em>consectetur adipiscing<\/em> <a href=\"\/collections\/all\" title=\"All\">elit<\/a><\/p>"
+      }
+    },
+    "dual_section_cPWBet": {
+      "type": "dual-section",
+      "settings": {
+        "section_margin": false,
+        "dual_section_title": "Deafult title",
+        "dual_section_title_size": "h3",
+        "dual_section_titleCTA": "Go to checkout",
+        "dual_section_linkCTA": "",
+        "position_image": "left",
+        "image_brackground": "shopify:\/\/shop_images\/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg",
         "dual_section_subtitle": "<p>lorem ipsum<\/p>",
         "dual_section_description": "<p><strong>Lorem ipsum dolor sit amet <\/strong><em>consectetur adipiscing<\/em> <a href=\"\/collections\/all\" title=\"All\">elit<\/a><\/p>"
       }
@@ -415,8 +438,10 @@
     "16479727170648f2b7",
     "ac6e96ac-edff-44b1-83d6-0aa22e35e335",
     "masonry_v2_BJgfBg",
+    "section_title_g6cVm8",
     "9ff7a25e-e105-49ba-b268-be58e10ab5ff",
     "3b3d4f4e-1e12-4439-afc1-e247b2e4905e",
+    "dual_section_cPWBet",
     "4ffec980-e8ab-422b-94db-60e50771a7cd",
     "c16f5e1f-6802-4fda-a09f-23a636861ac3",
     "548c36c0-79c4-4304-9c0d-27f14100319b",

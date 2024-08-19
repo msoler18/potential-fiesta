@@ -91,10 +91,10 @@
         "template--15978344546484__c4e8f06a-2f8e-4481-a189-9da4765b273f-16818493522cff988a-2"
       ],
       "settings": {
-        "heading_main_first": "",
-        "heading_main_highligthed": "",
-        "heading_main_second": "",
-        "heading_description": "",
+        "heading_main_first": "Encuentre el",
+        "heading_main_highligthed": "producto",
+        "heading_main_second": "adecuado para usted!",
+        "heading_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "slider_mobile": true,
         "section_margin": true
       }

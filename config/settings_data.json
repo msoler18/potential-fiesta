@@ -36,38 +36,22 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-0": {
-            "type": "link_list",
+          "header_wXYEaT": {
+            "type": "header",
             "settings": {
-              "about_us_title": "About us title",
-              "about_us_description": "About us description",
-              "heading_categories": "Categories text",
-              "menu_categories": "",
-              "info_title": "Información",
-              "info_quotes_subtitle": "Correo cotizaciones",
-              "info_phone_subtitle": "Teléfonos contacto",
-              "info_phone_primary": "3144895712",
-              "info_phone_secondary": "3187722655"
             }
           },
-          "footer-1": {
-            "type": "link_list",
+          "info_about_xpqda7": {
+            "type": "info_about",
             "settings": {
-              "about_us_title": "About us title",
-              "about_us_description": "About us description",
-              "heading_categories": "Categories text",
-              "menu_categories": "",
-              "info_title": "Información",
-              "info_quotes_subtitle": "Correo cotizaciones",
-              "info_phone_subtitle": "Teléfonos contacto",
-              "info_phone_primary": "3144895712",
-              "info_phone_secondary": "3187722655"
+              "about_us_title": "¿Quiénes somos?",
+              "about_us_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             }
           }
         },
         "block_order": [
-          "footer-0",
-          "footer-1"
+          "header_wXYEaT",
+          "info_about_xpqda7"
         ],
         "settings": {
           "sub_footer": "© 2022, theme-base Powered by Gradiweb",

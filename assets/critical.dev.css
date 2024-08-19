@@ -301,7 +301,6 @@ a:hover {
 }
 
 .header {
-  background: red;
   display: grid;
   grid-template-columns: 3fr 3fr 4fr 4fr 2fr;
   z-index: 2;

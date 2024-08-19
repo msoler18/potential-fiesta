@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "node clean.js",
     "dev": "node mode.js development && webpack --config webpack.config.js --mode development --progress"
-  },s
+  },
   "devDependencies": {
     "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",

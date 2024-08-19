@@ -66,7 +66,8 @@
     %}
     <main id="MainContent" role="main" tabindex="-1">
       {% section 'header' %}
-      {% render 'mega-menu' %}
+      {% section 'mega-menu' %}
+      {% section 'announcement-bar' %}
       {{ content_for_layout }}
       {% section 'footer' %}
     </main>

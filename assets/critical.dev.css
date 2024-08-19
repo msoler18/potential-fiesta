@@ -301,12 +301,14 @@ a:hover {
 }
 
 .header {
-  display: grid;
-  grid-template-columns: 3fr 3fr 4fr 4fr 2fr;
   z-index: 2;
   padding: 2%;
   border-bottom: 1px solid var(--color-base-principal);
   background-color: #fff;
+}
+.header__main {
+  display: grid;
+  grid-template-columns: 3fr 3fr 4fr 4fr 2fr;
 }
 .header__main--quotes {
   display: flex;
@@ -360,6 +362,10 @@ a:hover {
   display: flex;
   align-items: center;
 }
+.subcontainer_title {
+  margin-left: 10px;
+}
+
 .nav {
   display: flex;
   justify-content: center;

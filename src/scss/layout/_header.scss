@@ -6,15 +6,14 @@
 }
 
 .header {
-  display: grid;
-  grid-template-columns: 3fr 3fr 4fr 4fr 2fr;
   z-index: 2;
   padding: 2%;
   border-bottom: 1px solid variables.$color-principal;
   background-color: variables.$color-white;
 
   &__main {
-
+    display: grid;
+    grid-template-columns: 3fr 3fr 4fr 4fr 2fr;
     &--search {}
 
     &--quotes {
@@ -83,8 +82,9 @@
 .subcontainer {
   display: flex;
   align-items: center;
-
-  &_title {}
+  &_title {
+    margin-left:10px;
+  }
 }
 
 .nav {

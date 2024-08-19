@@ -137,11 +137,16 @@
         "heading": "Heading carousel"
       }
     },
+    "section_title_daxAG9": {
+      "type": "section-title",
+      "settings": {
+        "title": "Nuestros",
+        "title_highligthed": "productos"
+      }
+    },
     "ac6e96ac-edff-44b1-83d6-0aa22e35e335": {
       "type": "masonry-v1",
       "settings": {
-        "main_title": "Catálogo de",
-        "main_title_highlighted": "productos",
         "main_image_aligment": "left",
         "images_show_label": "hover",
         "image_1": "shopify:\/\/shop_images\/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg",
@@ -265,186 +270,19 @@
         "text_button_two": "Discount product",
         "url_button_two": "shopify:\/\/products\/damp-glade"
       }
-    },
-    "c16f5e1f-6802-4fda-a09f-23a636861ac3": {
-      "type": "flex-block",
-      "blocks": {
-        "template--15978344546484__c16f5e1f-6802-4fda-a09f-23a636861ac3-1681851905407596ee-0": {
-          "type": "block",
-          "settings": {
-            "title": "Suspendisse tristique lectus non turpis pellentesque",
-            "title_size": "h3",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
-            "cta_text": "Etiam auctor",
-            "cta_url": ""
-          }
-        },
-        "template--15978344546484__c16f5e1f-6802-4fda-a09f-23a636861ac3-1681851905407596ee-1": {
-          "type": "block",
-          "settings": {
-            "title": "Suspendisse tristique lectus non turpis pellentesque",
-            "title_size": "h3",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
-            "cta_text": "Etiam auctor",
-            "cta_url": ""
-          }
-        },
-        "template--15978344546484__c16f5e1f-6802-4fda-a09f-23a636861ac3-1681851905407596ee-2": {
-          "type": "block",
-          "settings": {
-            "title": "Suspendisse tristique lectus non turpis pellentesque",
-            "title_size": "h3",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
-            "cta_text": "Etiam auctor",
-            "cta_url": ""
-          }
-        },
-        "template--15978344546484__c16f5e1f-6802-4fda-a09f-23a636861ac3-1681851905407596ee-3": {
-          "type": "block",
-          "settings": {
-            "title": "Suspendisse tristique lectus non turpis pellentesque",
-            "title_size": "h3",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
-            "cta_text": "Etiam auctor",
-            "cta_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--15978344546484__c16f5e1f-6802-4fda-a09f-23a636861ac3-1681851905407596ee-0",
-        "template--15978344546484__c16f5e1f-6802-4fda-a09f-23a636861ac3-1681851905407596ee-1",
-        "template--15978344546484__c16f5e1f-6802-4fda-a09f-23a636861ac3-1681851905407596ee-2",
-        "template--15978344546484__c16f5e1f-6802-4fda-a09f-23a636861ac3-1681851905407596ee-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "width": "50"
-      }
-    },
-    "548c36c0-79c4-4304-9c0d-27f14100319b": {
-      "type": "reviews",
-      "blocks": {
-        "template--15978344546484__548c36c0-79c4-4304-9c0d-27f14100319b-16818543793f6a805f-0": {
-          "type": "review",
-          "settings": {
-            "points": 5,
-            "title": "Awesome 👌",
-            "author": "Anonymous",
-            "description": "<p>Pellentesque tellus ante, posuere sed diam vel, mattis cursus diam.<\/p>"
-          }
-        },
-        "template--15978344546484__548c36c0-79c4-4304-9c0d-27f14100319b-16818543793f6a805f-1": {
-          "type": "review",
-          "settings": {
-            "points": 5,
-            "title": "Awesome 👌",
-            "author": "Anonymous",
-            "description": "<p>Pellentesque tellus ante, posuere sed diam vel, mattis cursus diam.<\/p>"
-          }
-        },
-        "template--15978344546484__548c36c0-79c4-4304-9c0d-27f14100319b-16818543793f6a805f-2": {
-          "type": "review",
-          "settings": {
-            "points": 5,
-            "title": "Awesome 👌",
-            "author": "Anonymous",
-            "description": "<p>Pellentesque tellus ante, posuere sed diam vel, mattis cursus diam.<\/p>"
-          }
-        },
-        "template--15978344546484__548c36c0-79c4-4304-9c0d-27f14100319b-16818543793f6a805f-3": {
-          "type": "review",
-          "settings": {
-            "points": 5,
-            "title": "Awesome 👌",
-            "author": "Anonymous",
-            "description": "<p>Pellentesque tellus ante, posuere sed diam vel, mattis cursus diam.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--15978344546484__548c36c0-79c4-4304-9c0d-27f14100319b-16818543793f6a805f-0",
-        "template--15978344546484__548c36c0-79c4-4304-9c0d-27f14100319b-16818543793f6a805f-1",
-        "template--15978344546484__548c36c0-79c4-4304-9c0d-27f14100319b-16818543793f6a805f-2",
-        "template--15978344546484__548c36c0-79c4-4304-9c0d-27f14100319b-16818543793f6a805f-3"
-      ],
-      "settings": {
-        "ratings": 5,
-        "title": "Review section",
-        "count": 123,
-        "cta_text": "See more reviews",
-        "cta_url": "",
-        "cta_icon": ""
-      }
-    },
-    "icons": {
-      "type": "multi-icon-row",
-      "blocks": {
-        "icon-1": {
-          "type": "icon",
-          "settings": {
-            "heading": "Fast integration",
-            "row_icon_description": ""
-          }
-        },
-        "icon-2": {
-          "type": "icon",
-          "settings": {
-            "heading": "Friendly",
-            "row_icon_description": ""
-          }
-        },
-        "icon-3": {
-          "type": "icon",
-          "settings": {
-            "heading": "Time reduction",
-            "row_icon_description": ""
-          }
-        },
-        "icon-4": {
-          "type": "icon",
-          "settings": {
-            "heading": "productivity",
-            "row_icon_description": ""
-          }
-        },
-        "icon-5": {
-          "type": "icon",
-          "settings": {
-            "heading": "Scalability",
-            "row_icon_description": ""
-          }
-        }
-      },
-      "block_order": [
-        "icon-1",
-        "icon-2",
-        "icon-3",
-        "icon-4",
-        "icon-5"
-      ],
-      "settings": {
-        "heading_main_first": "",
-        "heading_main_highligthed": "",
-        "heading_main_second": "",
-        "heading_description": "",
-        "slider_mobile": true,
-        "section_margin": false
-      }
     }
   },
   "order": [
     "81203b59-e773-4a8f-94f9-ab2785218a6b",
     "c4e8f06a-2f8e-4481-a189-9da4765b273f",
     "16479727170648f2b7",
+    "section_title_daxAG9",
     "ac6e96ac-edff-44b1-83d6-0aa22e35e335",
     "masonry_v2_BJgfBg",
     "section_title_g6cVm8",
     "9ff7a25e-e105-49ba-b268-be58e10ab5ff",
     "3b3d4f4e-1e12-4439-afc1-e247b2e4905e",
     "dual_section_cPWBet",
-    "4ffec980-e8ab-422b-94db-60e50771a7cd",
-    "c16f5e1f-6802-4fda-a09f-23a636861ac3",
-    "548c36c0-79c4-4304-9c0d-27f14100319b",
-    "icons"
+    "4ffec980-e8ab-422b-94db-60e50771a7cd"
   ]
 }

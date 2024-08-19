@@ -17,40 +17,35 @@
           "type": "icon",
           "settings": {
             "heading": "Fast integration",
-            "row_icon_description": "",
-            "row_icon_image": "integration"
+            "row_icon_description": ""
           }
         },
         "template--15978344546484__c4e8f06a-2f8e-4481-a189-9da4765b273f-16818493522cff988a-1": {
           "type": "icon",
           "settings": {
             "heading": "Friendly",
-            "row_icon_description": "",
-            "row_icon_image": "friendly"
+            "row_icon_description": ""
           }
         },
         "template--15978344546484__c4e8f06a-2f8e-4481-a189-9da4765b273f-16818493522cff988a-2": {
           "type": "icon",
           "settings": {
             "heading": "Time reduction",
-            "row_icon_description": "",
-            "row_icon_image": "time"
+            "row_icon_description": ""
           }
         },
         "template--15978344546484__c4e8f06a-2f8e-4481-a189-9da4765b273f-16818493522cff988a-3": {
           "type": "icon",
           "settings": {
             "heading": "productivity",
-            "row_icon_description": "",
-            "row_icon_image": "producty"
+            "row_icon_description": ""
           }
         },
         "bb9d738c-6b54-4e34-86ff-3492ead1ee58": {
           "type": "icon",
           "settings": {
             "heading": "Scalability",
-            "row_icon_description": "",
-            "row_icon_image": "scaling"
+            "row_icon_description": ""
           }
         }
       },
@@ -327,40 +322,35 @@
           "type": "icon",
           "settings": {
             "heading": "Fast integration",
-            "row_icon_description": "",
-            "row_icon_image": "integration"
+            "row_icon_description": ""
           }
         },
         "icon-2": {
           "type": "icon",
           "settings": {
             "heading": "Friendly",
-            "row_icon_description": "",
-            "row_icon_image": "friendly"
+            "row_icon_description": ""
           }
         },
         "icon-3": {
           "type": "icon",
           "settings": {
             "heading": "Time reduction",
-            "row_icon_description": "",
-            "row_icon_image": "time"
+            "row_icon_description": ""
           }
         },
         "icon-4": {
           "type": "icon",
           "settings": {
             "heading": "productivity",
-            "row_icon_description": "",
-            "row_icon_image": "producty"
+            "row_icon_description": ""
           }
         },
         "icon-5": {
           "type": "icon",
           "settings": {
             "heading": "Scalability",
-            "row_icon_description": "",
-            "row_icon_image": "scaling"
+            "row_icon_description": ""
           }
         }
       },

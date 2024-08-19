@@ -16,7 +16,9 @@
   <h2 class="cta__title">
     {{ section.settings.title }}
   </h2>
-
+  <p class="cta_description">
+    {{ section.settings.description }}
+  </p>
   <!-- eslint-disable max-len -->
   <div class="cta__buttons-wrapper">
     {% if section.settings.text_button_one != blank and section.settings.url_button_one != blank %}
@@ -65,6 +67,11 @@
       "id": "title",
       "label": "Title",
       "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "type": "html",
+      "id": "description",
+      "label": "Call to action description"
     },
     {
       "type": "image_picker",

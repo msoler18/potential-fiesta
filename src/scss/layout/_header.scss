@@ -6,30 +6,27 @@
 }
 
 .header {
+  background: red;
   display: grid;
+  grid-template-columns: 3fr 3fr 4fr 4fr 2fr;
   z-index: 2;
-  padding: 0 50px;
+  padding: 2%;
   border-bottom: 1px solid variables.$color-principal;
   background-color: variables.$color-white;
-  grid-template-columns: 2fr;
-  grid-column-gap: 15px;
-  column-gap: 15px;
 
   &__main {
 
+    &--search {}
 
-    &--search {
-
-    }
-  
     &--quotes {
-  
-    }
-  
-    &--wp {
-  
+      display: flex;
+      flex-direction: column;
     }
 
+    &--wp {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
 
@@ -46,7 +43,7 @@
   &__logo {
     @extend %flex-center;
 
-    & > a {
+    &>a {
       display: block;
       font-weight: 600;
       letter-spacing: 3px;
@@ -64,7 +61,7 @@
     justify-content: flex-end;
     align-items: center;
 
-    & > * {
+    &>* {
       display: block;
       cursor: pointer;
 
@@ -76,12 +73,19 @@
     svg {
       width: auto;
       height: 25px;
-      
+
       &.icon-cart {
         height: 29px;
       }
     }
   }
+}
+
+.subcontainer {
+  display: flex;
+  align-items: center;
+
+  &_title {}
 }
 
 .nav {
@@ -98,8 +102,8 @@
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
-    
-    & > *:not(:last-child) {
+
+    &>*:not(:last-child) {
       margin-right: 20px;
     }
 
@@ -153,11 +157,11 @@
         margin-bottom: 20px;
       }
 
-      & > *:not(:last-child) {
+      &>*:not(:last-child) {
         margin-bottom: 5px;
       }
 
-      & > a {
+      &>a {
         font-weight: 600;
       }
     }
@@ -170,11 +174,11 @@
     text-transform: uppercase;
 
     &:hover {
-      & > button.nav__button > svg {
+      &>button.nav__button>svg {
         transform: rotateZ(180deg);
       }
 
-      & > ul.nav__dropdown {
+      &>ul.nav__dropdown {
         display: block;
       }
     }
@@ -189,7 +193,7 @@
       justify-content: center;
     }
 
-    & > svg {
+    &>svg {
       width: auto;
       height: 33px;
     }

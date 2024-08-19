@@ -3,6 +3,13 @@
     {% for block in section.blocks %}
       {% case block.type %}
 
+        {% when "header" %}
+
+          <div class="footer__logo">
+            logo image
+          </div>
+
+
         {% when "link_list" %}
           <nav
             class="footer-blocks__linklist"

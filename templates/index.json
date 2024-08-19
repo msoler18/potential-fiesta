@@ -99,6 +99,112 @@
         "section_margin": true
       }
     },
+    "16479727170648f2b7": {
+      "type": "carousel-products",
+      "blocks": {
+        "16479727173cfca19d-0": {
+          "type": "product",
+          "settings": {
+            "product": "3d-microphone-ta-1-910754"
+          }
+        },
+        "16479727173cfca19d-1": {
+          "type": "product",
+          "settings": {
+            "product": "ca-3-cable-switch-30004"
+          }
+        },
+        "16479727173cfca19d-2": {
+          "type": "product",
+          "settings": {
+            "product": "lens-cap-tl-2-910764"
+          }
+        },
+        "16479727173cfca19d-3": {
+          "type": "product",
+          "settings": {
+            "product": "3d-microphone-ta-1-910754"
+          }
+        }
+      },
+      "block_order": [
+        "16479727173cfca19d-0",
+        "16479727173cfca19d-1",
+        "16479727173cfca19d-2",
+        "16479727173cfca19d-3"
+      ],
+      "settings": {
+        "heading": "Heading carousel"
+      }
+    },
+    "ac6e96ac-edff-44b1-83d6-0aa22e35e335": {
+      "type": "masonry-v1",
+      "settings": {
+        "main_title": "Catálogo de",
+        "main_title_highlighted": "productos",
+        "main_image_aligment": "left",
+        "images_show_label": "hover",
+        "image_1": "shopify:\/\/shop_images\/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg",
+        "image_1_label": "In egestas eget ipsum semper varius.",
+        "image_1_url": "shopify:\/\/pages\/contact",
+        "image_2": "shopify:\/\/shop_images\/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg",
+        "image_2_label": "Cras dignissim viverra lobortis.",
+        "image_2_url": "",
+        "image_3": "shopify:\/\/shop_images\/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg",
+        "image_3_label": "Nulla vitae purus et nibh laoreet consequat.",
+        "image_3_url": ""
+      }
+    },
+    "masonry_v2_BJgfBg": {
+      "type": "masonry-v2",
+      "blocks": {
+        "masonry_image_YHKzXH": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg",
+            "url": ""
+          }
+        },
+        "masonry_image_bN4yCc": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg",
+            "url": ""
+          }
+        },
+        "masonry_image_hEibbF": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg",
+            "url": ""
+          }
+        },
+        "masonry_image_6yhfjx": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg",
+            "url": ""
+          }
+        },
+        "masonry_image_BPTXcQ": {
+          "type": "masonry_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "masonry_image_YHKzXH",
+        "masonry_image_bN4yCc",
+        "masonry_image_hEibbF",
+        "masonry_image_6yhfjx",
+        "masonry_image_BPTXcQ"
+      ],
+      "settings": {
+        "columns": 5
+      }
+    },
     "9ff7a25e-e105-49ba-b268-be58e10ab5ff": {
       "type": "dual-section",
       "settings": {
@@ -135,21 +241,6 @@
         "url_button_one": "shopify:\/\/collections",
         "text_button_two": "Discount product",
         "url_button_two": "shopify:\/\/products\/damp-glade"
-      }
-    },
-    "ac6e96ac-edff-44b1-83d6-0aa22e35e335": {
-      "type": "masonry-v1",
-      "settings": {
-        "main_title": "",
-        "main_title_highlighted": "",
-        "main_image_aligment": "left",
-        "images_show_label": "hover",
-        "image_1_label": "In egestas eget ipsum semper varius.",
-        "image_1_url": "",
-        "image_2_label": "Cras dignissim viverra lobortis.",
-        "image_2_url": "",
-        "image_3_label": "Nulla vitae purus et nibh laoreet consequat.",
-        "image_3_url": ""
       }
     },
     "c16f5e1f-6802-4fda-a09f-23a636861ac3": {
@@ -205,44 +296,6 @@
       "disabled": true,
       "settings": {
         "width": "50"
-      }
-    },
-    "16479727170648f2b7": {
-      "type": "carousel-products",
-      "blocks": {
-        "16479727173cfca19d-0": {
-          "type": "product",
-          "settings": {
-            "product": "3d-microphone-ta-1-910754"
-          }
-        },
-        "16479727173cfca19d-1": {
-          "type": "product",
-          "settings": {
-            "product": "ca-3-cable-switch-30004"
-          }
-        },
-        "16479727173cfca19d-2": {
-          "type": "product",
-          "settings": {
-            "product": "lens-cap-tl-2-910764"
-          }
-        },
-        "16479727173cfca19d-3": {
-          "type": "product",
-          "settings": {
-            "product": "3d-microphone-ta-1-910754"
-          }
-        }
-      },
-      "block_order": [
-        "16479727173cfca19d-0",
-        "16479727173cfca19d-1",
-        "16479727173cfca19d-2",
-        "16479727173cfca19d-3"
-      ],
-      "settings": {
-        "heading": "Heading carousel"
       }
     },
     "548c36c0-79c4-4304-9c0d-27f14100319b": {
@@ -359,12 +412,13 @@
   "order": [
     "81203b59-e773-4a8f-94f9-ab2785218a6b",
     "c4e8f06a-2f8e-4481-a189-9da4765b273f",
+    "16479727170648f2b7",
+    "ac6e96ac-edff-44b1-83d6-0aa22e35e335",
+    "masonry_v2_BJgfBg",
     "9ff7a25e-e105-49ba-b268-be58e10ab5ff",
     "3b3d4f4e-1e12-4439-afc1-e247b2e4905e",
     "4ffec980-e8ab-422b-94db-60e50771a7cd",
-    "ac6e96ac-edff-44b1-83d6-0aa22e35e335",
     "c16f5e1f-6802-4fda-a09f-23a636861ac3",
-    "16479727170648f2b7",
     "548c36c0-79c4-4304-9c0d-27f14100319b",
     "icons"
   ]

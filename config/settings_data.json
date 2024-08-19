@@ -36,24 +36,28 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-0": {
-            "type": "link_list",
+          "info_about_9VNN6f": {
+            "type": "info_about",
             "settings": {
-              "categories_menu_title": "Información",
-              "menu_categories": ""
+              "about_us_title": "About us title",
+              "about_us_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             }
           },
-          "footer-1": {
-            "type": "link_list",
+          "contact_info_YFnLha": {
+            "type": "contact_info",
             "settings": {
-              "categories_menu_title": "Información",
-              "menu_categories": ""
+              "info_title": "Información",
+              "info_quotes_subtitle": "Correo cotizaciones",
+              "info_quotes_email": "ventas@en-stock.com",
+              "info_phone_subtitle": "Teléfonos contacto",
+              "info_phone_primary": "3144895712",
+              "info_phone_secondary": "3187722655"
             }
           }
         },
         "block_order": [
-          "footer-0",
-          "footer-1"
+          "info_about_9VNN6f",
+          "contact_info_YFnLha"
         ],
         "settings": {
           "sub_footer": "© 2022, theme-base Powered by Gradiweb",

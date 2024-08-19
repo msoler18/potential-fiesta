@@ -9,6 +9,11 @@
             logo image
           </div>
 
+        {% when "info_about" %}  
+
+          <div class="">
+
+          </div>
 
         {% when "link_list" %}
           <nav
@@ -177,6 +182,11 @@
     }
   ],
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo footer"
+    },
     {
       "type": "text",
       "id": "sub_footer",

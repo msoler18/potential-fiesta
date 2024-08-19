@@ -6,8 +6,7 @@
   "author": "Miguel Soler",
   "scripts": {
     "clean": "node clean.js",
-    "dev": "node mode.js development && webpack --config webpack.config.js --mode development --progress",
-    "cy:open": "cypress open"
+    "dev": "node mode.js development && webpack --config webpack.config.js --mode development --progress"
   },
   "devDependencies": {
     "babel-loader": "^9.1.3",

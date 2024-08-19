@@ -39,12 +39,14 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
+              "categories_menu_title": "Información",
               "menu_categories": ""
             }
           },
           "footer-1": {
             "type": "link_list",
             "settings": {
+              "categories_menu_title": "Información",
               "menu_categories": ""
             }
           }
@@ -55,7 +57,7 @@
         ],
         "settings": {
           "sub_footer": "© 2022, theme-base Powered by Gradiweb",
-          "social_media": true
+          "social_media": false
         }
       },
       "side-cart": {

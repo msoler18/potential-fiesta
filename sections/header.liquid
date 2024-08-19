@@ -50,7 +50,7 @@
   <div class="header__main--wp">
 
     <span class="subcontainer">
-      icon
+      {{ section.settings.wp_icon | image_url: width: 24 | image_tag }}
       {{ section.settings.wp_heading}}
     </span>
 

@@ -35,7 +35,7 @@
   <div class="header__main--quotes">
 
     <span class="subcontainer">
-      icon
+      {{ section.settings.email_icon | image_url: width: 24 | image_tag }}
       {{ section.settings.email_heading }}
     </span>
 

@@ -153,53 +153,79 @@
       "name": "t:sections.footer.blocks.link_list.name",
       "settings": [
         {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo footer"
+        },
+        {
           "type": "text",
-          "id": "heading",
-          "default": "Quick links",
-          "label": "t:sections.footer.blocks.link_list.settings.heading.label",
-          "info": "t:sections.footer.blocks.link_list.settings.heading.info"
+          "id": "about_us_title",
+          "default": "About us title",
+          "label": "About us title"
+        },
+        {
+          "type": "html",
+          "id": "about_us_description",
+          "default": "About us description",
+          "label": "About us description"
+        },
+        {
+          "type": "text",
+          "id": "heading_categories",
+          "default": "Categories text",
+          "label": "Categories text"
         },
         {
           "type": "link_list",
-          "id": "menu",
-          "default": "footer",
-          "label": "t:sections.footer.blocks.link_list.settings.menu.label",
-          "info": "t:sections.footer.blocks.link_list.settings.menu.info"
-        }
-      ]
-    },
-    {
-      "type": "newslatter",
-      "name": "t:sections.footer.settings.header__1.content",
-      "settings": [
-        {
-          "type": "text",
-          "id": "newsletter_heading",
-          "default": "Subscribe to our emails",
-          "label": "t:sections.footer.settings.newsletter_heading.label"
+          "id": "menu_categories",
+          "label": "Categories links"
         },
         {
           "type": "text",
-          "id": "newsletter_sub",
-          "default": "Subscribe to receive special offers, free gifts and unique deals",
-          "label": "Sub-heading newslatter"
+          "id": "info_title",
+          "default": "Información",
+          "label": "Info title"
+        },
+        {
+          "type": "text",
+          "id": "info_quotes_subtitle",
+          "default": "Correo cotizaciones",
+          "label": "Quotes title"
+        },
+        {
+          "type": "text",
+          "id": "info_phone_subtitle",
+          "default": "Teléfonos contacto",
+          "label": "Phone title"
+        },
+        {
+          "type": "text",
+          "id": "info_phone_primary",
+          "default": "3144895712",
+          "label": "Primary phone"
+        },
+        {
+          "type": "text",
+          "id": "info_phone_secondary",
+          "default": "3187722655",
+          "label": "Secondary phone"
         }
       ]
     },
     {
       "type": "info",
-      "name": "Only information",
+      "name": "Copyright",
       "settings": [
         {
           "type": "text",
           "id": "heading",
-          "default": "Powered by Gradiweb",
+          "default": "Powered by En-stock",
           "label": "Heading"
         },
         {
           "type": "text",
           "id": "sub",
-          "default": "Modules: JS - SCSS, Based in components and DRY CODE",
+          "default": "Promocionales en-stock",
           "label": "Text"
         }
       ]
@@ -209,8 +235,8 @@
     {
       "type": "text",
       "id": "sub_footer",
-      "default": "© 2022, theme-base Powered by Gradiweb",
-      "label": "t:sections.footer.blocks.text.name"
+      "default": "© 2024, promocioanales en-stock",
+      "label": "Copyrigth title"
     },
     {
       "type": "checkbox",
@@ -226,9 +252,6 @@
       },
       {
         "type": "link_list"
-      },
-      {
-        "type": "newslatter"
       }
     ]
   }

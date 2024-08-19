@@ -22,7 +22,7 @@
 
 <div class="hero--simple">
   {% if imagedesktop != blank %}
-  <div class="hero__image">
+  <div class="hero__image content--align--{{ contentalign }}">
     <picture>
       {% assign img_src = imagedesktop | image_url: width: 1440 %}
       {% if imagemobile != blank %}

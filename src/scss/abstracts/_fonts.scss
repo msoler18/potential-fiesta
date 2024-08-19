@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Inter Bold';
+  src: url('/assets/Inter-Bold.woff2') format('woff2'),
+       url('/assets/Inter-Bold.svg#Inter-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Black';
+  src: url('/assets/Inter-Black.woff2') format('woff2'),
+       url('/assets/Inter-Black.svg#Inter-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Extra Light';
+  src: url('/assets/Inter-ExtraLight.woff2') format('woff2'),
+       url('/assets/Inter-ExtraLight.svg#Inter-ExtraLight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Extra Bold';
+  src: url('/assets/Inter-ExtraBold.woff2') format('woff2'),
+       url('/assets/Inter-ExtraBold.svg#Inter-ExtraBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Light';
+  src: url('/assets/Inter-Light.woff2') format('woff2'),
+       url('/assets/Inter-Light.svg#Inter-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Regular';
+  src: url('/assets/Inter-Regular.woff2') format('woff2'),
+       url('Inter-Regular.woff') format('woff'),
+       url('/assets/Inter-Regular.svg#Inter-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Medium';
+  src: url('/assets/Inter-Medium.woff2') format('woff2'),
+       url('/assets/Inter-Medium.svg#Inter-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter SemiBold';
+  src: url('/assets/Inter-SemiBold.woff2') format('woff2'),
+       url('/assets/Inter-SemiBold.svg#Inter-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+

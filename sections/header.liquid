@@ -36,7 +36,9 @@
 
     <span class="subcontainer">
       {{ section.settings.email_icon | image_url: width: 24 | image_tag }}
-      {{ section.settings.email_heading }}
+      <span class="subcontainer_title">
+        {{ section.settings.email_heading }}
+      </span>
     </span>
 
     <span>

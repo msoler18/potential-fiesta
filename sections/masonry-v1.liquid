@@ -1,14 +1,3 @@
-{% if section.settings.main_title != blank %}
-
-  <h2 class="section__title"> 
-    {{ section.settings.main_title }}
-    <span class="higlighted">
-      {{ section.settings.main_title_highlighted }}
-    </span>
-  </h2>
-
-{% endif %}
-
 <div class="masonry-v1">
 
   {% if section.settings.main_image_aligment == 'left' %}
@@ -61,16 +50,6 @@
     "class": "wrapper",
     "tag": "section",
     "settings": [
-      {
-        "type": "text",
-        "id": "main_title",
-        "label": "Main title"
-      },
-      {
-        "type": "text",
-        "id": "main_title_highlighted",
-        "label": "Main title higlighted"
-      },
       {
         "type": "radio",
         "id": "main_image_aligment",

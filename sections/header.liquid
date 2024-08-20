@@ -78,6 +78,13 @@
 
 </div>
 
+<div class="header__menu">
+
+  {% render 'mega-menu',
+  menu: section.settings.menu %}
+
+</div>
+
 
 {% schema %}
 {
@@ -136,6 +143,6 @@
       "default": 3187722655,
       "label": "Quotes second number"
     }
-  ]
+  ]  
 }
 {% endschema %}

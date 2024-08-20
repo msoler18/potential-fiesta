@@ -1,0 +1,60 @@
+{% comment %}
+  Text with icon
+
+  Accepts:
+ - section: {Object} Section of template
+ - class: {String} ClassName of parent
+ - extra_content: {String} HTML content EXTRA
+ - speed: {Number} Speed move every slide
+
+  Usage:
+  {% render 'top-bar',
+    section: section,
+    class: 'topbar--header',
+    extra_content: extra_content,
+    speed: 10
+  %}
+{% endcomment %}
+
+{% assign show = false %}
+
+{% liquid
+  for block in section.blocks
+    if block.type == "message"
+      assign show = true
+      break
+    endif
+  endfor
+%}
+
+{% if show %}
+  <div class="topbar {{ class }} topbar-js">
+    {{ extra_content }}
+  
+    {% capture message_content %}
+      {% for block in section.blocks %}
+        {% if block.type == "message" %}
+          <swiper-slide>
+            <span class="topbar__item">
+              {{ block.settings.heading }}
+            </span>
+          </swiper-slide>
+        {% endif %}
+      {% endfor %}
+    {% endcapture %}
+  
+    {% assign speed = speed | times: 1000 %}
+  
+    {% render 'slider-component',
+      section: section,
+      content: message_content,
+      navigation: true,
+      perpage: 1,
+      perpage_mobile: 1,
+      auto: true,
+      speed: speed,
+      space_between: 0,
+      auto_height: true,
+    %}
+  </div>  
+{% endif %}

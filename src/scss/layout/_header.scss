@@ -27,6 +27,11 @@
     }
   }
 
+  &__menu {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+  }
+
 
   @media screen and (max-width: variables.$break-point-header) {
     padding: 1rem;

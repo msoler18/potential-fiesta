@@ -1,13 +1,6 @@
-{% capture extra_content %}
-  <div class="topbar__info">
-    {% render "top-bar-info" %}
-  </div>
-{% endcapture %}
-
 {% render 'top-bar',
   section: section,
   class: 'topbar--header',
-  extra_content: extra_content,
   speed: 10
 %}
 

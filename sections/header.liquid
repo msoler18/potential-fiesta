@@ -85,14 +85,6 @@
 
 </div>
 
-<div class="header__topbar">
-  {% render 'top-bar',
-    section: section,
-    class: 'topbar--header',
-    speed: 10
-  %}
-</div>
-
 
 {% schema %}
 {
@@ -151,21 +143,6 @@
       "default": 3187722655,
       "label": "Quotes second number"
     }
-  ],
-  "blocks": [
-    {
-      "type": "message",
-      "limit": 3,
-      "name": "Top bar message",
-      "settings": [
-        {
-          "type": "inline_richtext",
-          "id": "heading",
-          "label": "Paragraph message",
-          "default": "<span>🚛 Livraison offerte sur l'ensemble nos packs</span>"
-        }
-      ]
-    }
-  ]
+  ]  
 }
 {% endschema %}

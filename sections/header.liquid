@@ -86,7 +86,11 @@
 </div>
 
 <div class="header__topbar">
-  {% render 'announcement-bar' %}
+  {% render 'top-bar',
+    section: section,
+    class: 'topbar--header',
+    speed: 10
+  %}
 </div>
 
 

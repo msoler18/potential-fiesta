@@ -1,1 +1,35 @@
-anouncem
+{% capture extra_content %}
+  <div class="topbar__info">
+    {% render "top-bar-info" %}
+  </div>
+{% endcapture %}
+
+{% render 'top-bar',
+  section: section,
+  class: 'topbar--header',
+  extra_content: extra_content,
+  speed: 10
+%}
+
+{% schema %}
+{
+  "name": "Top bar",
+  "settings": [],
+  "max_blocks": 3,
+  "blocks": [
+    {
+      "type": "message",
+      "limit": 3,
+      "name": "Top bar message",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Paragraph message",
+          "default": "<span>🚛 Livraison offerte sur l'ensemble nos packs</span>"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

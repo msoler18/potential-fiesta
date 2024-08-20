@@ -24,6 +24,24 @@
     "sections": {
       "header": {
         "type": "header",
+        "blocks": {
+          "message_dEL6qM": {
+            "type": "message",
+            "settings": {
+              "heading": "<span>🚛 Livraison offerte sur l'ensemble nos packs<\/span>"
+            }
+          },
+          "message_Njmii4": {
+            "type": "message",
+            "settings": {
+              "heading": "<span>🚛 Livraison offerte sur l'ensemble nos packs<\/span>"
+            }
+          }
+        },
+        "block_order": [
+          "message_dEL6qM",
+          "message_Njmii4"
+        ],
         "settings": {
           "menu": "main-menu",
           "email_icon": "shopify:\/\/shop_images\/mail-icon.svg",
@@ -82,6 +100,34 @@
           "free_shipping": "Livraison gratuite",
           "limit_price": 100,
           "upsell_title": "Vous aimerez aussi.."
+        }
+      },
+      "mega-menu": {
+        "type": "mega-menu",
+        "settings": {
+        }
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "message_KXBMbK": {
+            "type": "message",
+            "settings": {
+              "heading": "<span>🚛 Livraison offerte sur l'ensemble nos packs<\/span>"
+            }
+          },
+          "message_idGP7i": {
+            "type": "message",
+            "settings": {
+              "heading": "<span>🚛 Livraison offerte sur l'ensemble nos packs<\/span>"
+            }
+          }
+        },
+        "block_order": [
+          "message_KXBMbK",
+          "message_idGP7i"
+        ],
+        "settings": {
         }
       }
     },

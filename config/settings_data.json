@@ -83,6 +83,34 @@
           "limit_price": 100,
           "upsell_title": "Vous aimerez aussi.."
         }
+      },
+      "mega-menu": {
+        "type": "mega-menu",
+        "settings": {
+        }
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "message_KXBMbK": {
+            "type": "message",
+            "settings": {
+              "heading": "<span>🚛 Livraison offerte sur l'ensemble nos packs<\/span>"
+            }
+          },
+          "message_idGP7i": {
+            "type": "message",
+            "settings": {
+              "heading": "<span>🚛 Livraison offerte sur l'ensemble nos packs<\/span>"
+            }
+          }
+        },
+        "block_order": [
+          "message_KXBMbK",
+          "message_idGP7i"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
